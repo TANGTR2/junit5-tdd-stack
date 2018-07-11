@@ -92,5 +92,16 @@ public class FizzBuzzTest {
         //then
         assertThat(result,is("BuzzWhizz"));
     }
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_call_fizzbuzz_when_input_is_105(){
+        //given
+        int number=105;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //when
+        String result =fizzBuzz.fizzBuzz(number);
+        //then
+        assertThat(result,is("FizzBuzzWhizz"));
+    }
 }
 
