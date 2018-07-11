@@ -17,4 +17,15 @@ public class FizzBuzzTest {
         //then
         assertThat(result,is("1"));
     }
+
+    @Test
+    public void should_return_Fizz_when_call_fizzbuzz_when_input_is_3(){
+        //given
+        int number=3;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //when
+        String result =fizzBuzz.fizzBuzz(number);
+        //then
+        assertThat(result,is("Fizz"));
+    }
 }
