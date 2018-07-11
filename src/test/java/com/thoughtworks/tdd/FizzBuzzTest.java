@@ -71,4 +71,14 @@ public class FizzBuzzTest {
         //then
         assertThat(result,is("Whizz"));
     }
+    @Test
+    public void should_return_FizzWhizz_when_call_fizzbuzz_when_input_is_21(){
+        //given
+        int number=21;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //when
+        String result =fizzBuzz.fizzBuzz(number);
+        //then
+        assertThat(result,is("FizzWhizz"));
+    }
 }
