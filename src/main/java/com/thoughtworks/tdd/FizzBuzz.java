@@ -2,12 +2,16 @@ package com.thoughtworks.tdd;
 
 public class FizzBuzz {
     public String fizzBuzz(int number) {
+        StringBuffer result =new StringBuffer();
+
         if (number % 3 == 0){
-            return "Fizz";
+            result.append("Fizz");
         }
         if (number % 5 == 0){
-            return "Buzz";
+            result.append("Buzz");
         }
-        return String.valueOf(number);
+
+
+        return "".equals(result.toString())? String.valueOf(number) : result.toString();
     }
 }
