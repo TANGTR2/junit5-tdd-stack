@@ -10,6 +10,9 @@ public class FizzBuzz {
         if (number % 5 == 0){
             result.append("Buzz");
         }
+        if (number % 7 == 0){
+            result.append("Whizz");
+        }
 
 
         return "".equals(result.toString())? String.valueOf(number) : result.toString();
