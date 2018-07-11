@@ -2,20 +2,20 @@ package com.thoughtworks.tdd;
 
 public class FizzBuzz {
     public String fizzBuzz(int number) {
-        StringBuffer result = new StringBuffer();
+        String result = new String();
         if (String.valueOf(number).indexOf("3") > -1) {
             return "Fizz";
         } else {
             if (number % 3 == 0) {
-                result.append("Fizz");
+                result = result.concat("Fizz");
             }
             if (number % 5 == 0) {
-                result.append("Buzz");
+                result = result.concat("Buzz");
             }
             if (number % 7 == 0) {
-                result.append("Whizz");
+                result = result.concat("Whizz");
             }
-            return "".equals(result.toString()) ? String.valueOf(number) : result.toString();
+            return "".equals(result) ? String.valueOf(number) : result;
         }
     }
 }
