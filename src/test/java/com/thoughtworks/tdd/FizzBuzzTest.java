@@ -38,4 +38,15 @@ public class FizzBuzzTest {
         //then
         assertThat(result,is("Fizz"));
     }
+
+    @Test
+    public void should_return_Buzz_when_call_fizzbuzz_when_input_is_5(){
+        //given
+        int number=5;
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //when
+        String result =fizzBuzz.fizzBuzz(number);
+        //then
+        assertThat(result,is("Buzz"));
+    }
 }
